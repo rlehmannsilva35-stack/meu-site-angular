@@ -1,0 +1,12 @@
+<section class="container">
+  <h2>Atualização Dinâmica (Two-Way Data Binding)</h2>
+  
+  <label for="nome">Digite seu nome:</label>
+  <input id="nome" type="text" [(ngModel)]="nomeUsuario" placeholder="Digite o seu nome aqui" />
+
+  <div class="cartao-preview">
+    <h3>Pré-visualização em Tempo Real</h3>
+    <p><strong>Aluno:</strong> {{ nomeUsuario || 'Aguardando digitação...' }}</p>
+    <p><strong>Disciplina:</strong> {{ curso }}</p>
+  </div>
+</section>
